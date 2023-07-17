@@ -3,25 +3,30 @@ h1 {
 }
 
 #loopword {
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
 }
+
 #I1 {
   text-align: center;
-
   border: 2px black solid;
-  width: 50%;
+  width: 90%;
+  max-width: 400px; /* Add a maximum width for better responsiveness */
+  margin: 10px auto; /* Center the element horizontally with some margin */
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: beige;
   border-radius: 20px;
-  column-width: 50%;
-  width: 50%;
-  height: 340px;
+  width: 90%;
+  max-width: 400px; /* Add a maximum width for better responsiveness */
+  height: auto; /* Adjust height automatically based on content */
+  margin: 10px auto; /* Center the element horizontally with some margin */
 }
+
 button {
   box-shadow: 0px 0px 10px red;
   background-color: rgb(26, 21, 121);
@@ -29,27 +34,35 @@ button {
   padding: 10px;
   border-radius: 20px;
   transition: 0.3s;
+  width: auto; /* Remove fixed width to allow button to adjust based on content */
+  margin-top: 10px; /* Add some margin at the top */
 }
+
 button:hover {
   background-color: green;
   cursor: pointer;
 }
+
 body {
   background-image: linear-gradient(to left, red, red, black, black);
 }
+
 #number {
   color: red;
 }
+
 #question {
-  float: right;
+  float: none; /* Remove the float property on smaller screens */
+  text-align: center; /* Center the element */
 }
+
 #hidden-div {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  float: right;
+  float: none; /* Remove the float property on smaller screens */
   display: none;
 }
 
-#label-container{
+#label-container {
   color: white;
 }
